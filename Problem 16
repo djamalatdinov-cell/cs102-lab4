@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int main() {
+  int grade;
+    cout<<"Enter student's grade:";
+    cin>>grade;
+
+    switch (grade/10) {
+        case 5: case 4: case 3: case 2: case 1: case 0: cout<<"F"; break;
+            case 6: cout<<"D"; break;
+            case 7: cout<<"C"; break;
+            case 8: cout<<"B"; break;
+            case 9: case 10: cout<<"A"; break;
+
+            default: cout<<"You can enter for today's date only numbers from 0 to 6";
+    }
+
+    return 0;
+}
