@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int w;
+    cout<<"Enter your weight(kg):";
+    cin >> w;
+
+    switch ( (w <= 0) ? -1 : (w > 20 ? 21 : w) ) {
+        case -1:
+            cout << "Invalid input"; break;
+        case 1: cout << "Shipping cost = 3500 som"; break;
+        case 2: case 3: cout << "Shipping cost = 5500 som"; break;
+        case 4: case 5: case 6: case 7: case 8: case 9: case 10:
+            cout << "Shipping cost = 8500 som"; break;
+        case 11: case 12: case 13: case 14: case 15: case 16: case 17: case 18: case 19: case 20:
+            cout << "Shipping cost = 10500 som"; break;
+        case 21: cout << "The package cannot be shipped"; break;
+    }
+
+    return 0;
+}
