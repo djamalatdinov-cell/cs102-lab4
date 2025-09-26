@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int month;
+    cout << "Enter month number: ";
+    cin >> month;
+
+    switch (month) {
+        case 1:
+            cout << "1 January - New Year"; break;
+        case 3:
+            cout << "8 March - International Women’s Day\n21 March - Navruz"; break;
+        case 5:
+            cout << "9 May - Day of Memory and Honour"; break;
+        case 9:
+            cout << "1 September - Independence Day"; break;
+        case 10:
+            cout << "1 October - Teachers and Mentors Day"; break;
+        case 12:
+            cout << "8 December - Constitution Day"; break;
+        default:
+            cout << "No national holiday in this month (or moveable Islamic holiday).";
+    }
+
+    return 0;
+}
