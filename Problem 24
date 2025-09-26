@@ -1,0 +1,28 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+using namespace std;
+int main() {
+    srand(time(0));
+    int number = 10 + rand() % 90;
+    int guess;
+    cout << "Enter your two-digit prediction: ";
+    cin >> guess;
+    cout << "Generated number was: " << number << endl;
+    if (guess == number) {
+        cout << "Accuracy: 100%" << endl;
+    } else {
+        int numTens = number / 10;
+        int numOnes = number % 10;
+        int guessTens = guess / 10;
+        int guessOnes = guess % 10;
+        if (guessTens == numTens || guessTens == numOnes ||
+            guessOnes == numTens || guessOnes == numOnes) {
+            cout << "Accuracy: 50%" << endl;
+            } else {
+                cout << "Accuracy: 0%" << endl;
+            }
+    }
+
+    return 0;
+}
