@@ -12,7 +12,7 @@ int main() {
             case 8: cout<<"B"; break;
             case 9: case 10: cout<<"A"; break;
 
-            default: cout<<"You can enter for today's date only numbers from 0 to 6";
+            default: cout<<"Invalid grade";
     }
 
     return 0;
