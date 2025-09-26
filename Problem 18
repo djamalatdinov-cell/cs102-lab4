@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main() {
+  char letter;
+    cout<<"Please enter your letter:";
+    cin>>letter;
+
+    switch (letter) {
+    case 'u': cout<<"Salam aleykum"; break;
+            case 'e': cout<<"Hello"; break;
+            case 'r': cout<<"Privet"; break;
+        case 'g': cout<<"Hallo"; break;
+        default: cout<<"I don't know this language"; break;
+    }
+
+    return 0;
+}
