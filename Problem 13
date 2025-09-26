@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main() {
+    char Letter;
+    cout<<"Enter a letter: ";
+    cin>>Letter;
+    if (Letter=='g')
+        cout<<"Go!";
+    else if (Letter=='y')
+    cout<<"Get ready!";
+    else if (Letter=='r')
+    cout<<"Stop";
+    else
+        cout<<"You can only enter g,y and r";
+
+    return 0;
+}
